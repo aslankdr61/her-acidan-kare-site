@@ -1,107 +1,131 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f5f4f0"><meta name="description" content="Her Açıdan Kare — dünyaya farklı açılardan bak.">
-<title>Her Açıdan Kare — Görsel Günlük</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-<style>
-:root{--paper:#f5f4f0;--ink:#20211e;--muted:#85867f;--line:#deded7;--lime:#d6f36a;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}button{font:inherit;color:inherit}.shell{max-width:1440px;padding:0 6.1%;margin:auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:11px}.brandmark{width:25px;height:25px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;font:16px var(--serif)}.topright{display:flex;align-items:center;gap:28px}.edition{color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}.lang{border:1px solid var(--line);background:transparent;border-radius:30px;padding:7px 11px;font-size:11px;cursor:pointer}.lang b{font-weight:700}.lang span{color:#aaa;margin:0 5px}.intro{padding:76px 0 47px;display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.19em;color:#77796e;margin:0 0 20px}.eyebrow i{display:inline-block;width:22px;border-top:1px solid;margin:0 9px 3px 0}.intro h1{font:600 clamp(50px,8vw,104px)/.98 var(--serif);letter-spacing:-.055em;margin:0;max-width:840px}.intro h1 em{font-weight:500;color:#84877b}.intro-copy{font-size:13px;color:#77796e;line-height:1.8;max-width:228px;margin:0 0 7px}.toolbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:67px;display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}.count{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:28px 19px;padding-bottom:70px}.card{grid-column:span 4;min-width:0;cursor:pointer}.card.wide{grid-column:span 8}.photo{width:100%;aspect-ratio:1.2;overflow:hidden;background:#e4e1d9;position:relative}.photo img,.photo video{width:100%;height:100%;display:block;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}.card:hover .photo img,.card:hover .photo video{transform:scale(1.035)}.zoom{position:absolute;right:12px;bottom:12px;background:var(--lime);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;opacity:0;transform:translateY(4px);transition:.2s}.card:hover .zoom{opacity:1;transform:none}.meta{display:flex;align-items:flex-start;justify-content:space-between;padding-top:12px;gap:12px}.title{font:500 19px var(--serif);margin:0}.place{font-size:10px;color:var(--muted);margin:5px 0 0}.index{font-size:10px;color:#999a92;padding-top:4px}.footer{border-top:1px solid var(--line);padding:20px 0 28px;display:flex;justify-content:space-between;color:#85867f;font-size:10px;letter-spacing:.08em;text-transform:uppercase}.lightbox{position:fixed;inset:0;z-index:5;background:rgba(20,21,19,.95);display:none;align-items:center;justify-content:center;padding:40px}.lightbox.open{display:flex}.lightbox img,.lightbox video{max-width:min(90vw,1300px);max-height:82vh;object-fit:contain}.lightbox video{width:min(90vw,1300px);height:auto;background:#111}.place-line{display:flex;align-items:center;gap:5px}.pin{display:inline-flex;color:#59652f;vertical-align:middle}.pin svg{width:12px;height:12px;fill:currentColor}.lb-close,.lb-arrow{position:absolute;border:1px solid #ffffff55;background:#ffffff12;color:white;border-radius:50%;display:grid;place-items:center;cursor:pointer}.lb-close{right:28px;top:26px;width:42px;height:42px;font-size:22px}.lb-arrow{width:46px;height:46px;font-size:22px;top:50%;transform:translateY(-50%)}.lb-prev{left:28px}.lb-next{right:28px}.lb-caption{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);color:white;text-align:center;font-size:12px}.lb-caption span{color:#aaa;display:block;margin-top:5px;font-size:10px}@media(max-width:760px){.shell{padding:0 22px}.topbar{height:64px}.edition{display:none}.intro{padding:56px 0 33px;grid-template-columns:1fr}.intro h1{font-size:clamp(55px,13vw,86px)}.intro-copy{max-width:310px}.toolbar{margin-bottom:19px;align-items:flex-start;padding:14px 0;gap:12px;flex-direction:column}.gallery{grid-template-columns:repeat(2,1fr);gap:23px 12px}.card,.card.wide{grid-column:span 1}.card.wide{grid-column:span 2}.photo{aspect-ratio:1}.card.wide .photo{aspect-ratio:1.32}.card.portrait .photo{aspect-ratio:.72}.title{font-size:17px}.zoom{opacity:1;transform:none;width:29px;height:29px}.footer{font-size:9px}.lightbox{padding:20px}.lb-prev{left:10px}.lb-next{right:10px}.lb-close{right:13px;top:13px}}@media(max-width:390px){.gallery{grid-template-columns:1fr}.card,.card.wide{grid-column:span 1}.card.wide .photo{aspect-ratio:1}.card.portrait .photo{aspect-ratio:.72}.brand{font-size:10px}}
-/* Refinement pass: richer contrast, wider canvas, clearer editorial hierarchy. */
-:root{--muted:#575950;--line:#d4d3cb;--lime:#c9e65c}
-.shell{max-width:1720px;padding-inline:5.2%}
-.topbar{height:82px}
-.brand{font-size:11px;letter-spacing:.15em}
-.edition,.count,.footer{color:#56584f}
-.lang{font-weight:600;color:#292a25;border-color:#c9c8c0;padding:8px 13px}
-.lang span{color:#74766d}
-.intro{padding:clamp(72px,8vw,116px) 0 58px;gap:clamp(28px,6vw,100px)}
-.eyebrow{font-size:11px;color:#52544b;letter-spacing:.2em}
-.intro h1{font-size:clamp(58px,8.2vw,116px);max-width:980px}
-.intro h1 em{color:#4f5740}
-.intro-copy{font-size:14px;color:#4f5149;line-height:1.9;max-width:290px}
-.toolbar{min-height:72px;margin-bottom:32px}
-
-
-.count{font-size:11px;font-weight:600;letter-spacing:.12em}
-.gallery{column-gap:24px;row-gap:36px;padding-bottom:88px}
-.photo{background:#e0ded6}
-
-.zoom{background:#c9e65c;color:#20211e;font-weight:700}
-.meta{padding-top:15px}
-.title{font-size:clamp(19px,1.55vw,23px);line-height:1.25;color:#24251f}
-.place{font-size:12px;color:#55574f;margin-top:6px}
-.index{font-size:11px;font-weight:600;color:#56584f}
-.footer{font-size:11px;border-color:#cfcec6;padding:22px 0 30px}
-.lb-caption{font-size:14px;font-weight:600}
-.lb-caption span{color:#d0d0c9;font-size:11px}
-
-button:focus-visible,.card:focus-visible{outline:3px solid #788b32;outline-offset:4px}
-@media(min-width:1500px){.gallery{column-gap:30px;row-gap:42px}.photo{aspect-ratio:1.24}}
-@media(max-width:760px){.shell{padding-inline:22px}.topbar{height:68px}.intro{padding:62px 0 38px;gap:18px}.intro h1{font-size:clamp(58px,13vw,90px)}.intro-copy{font-size:14px;max-width:340px}.toolbar{margin-bottom:22px}.gallery{column-gap:14px;row-gap:27px;padding-bottom:64px}.title{font-size:18px}.place{font-size:11px}.footer{font-size:9px}}
-@media(max-width:390px){.shell{padding-inline:17px}.intro{padding-top:49px}.intro h1{font-size:56px}.gallery{row-gap:24px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-
-
-/* Photo orientation: use embedded EXIF, manually turn image 01 counter-clockwise. */
-.photo img,.lightbox img{image-orientation:from-image}
-.photo img.rotate-ccw{object-fit:contain;transform:rotate(-90deg) scale(1.24)}
-.card:hover .photo img.rotate-ccw{transform:rotate(-90deg) scale(1.24)}
-.lightbox img.rotate-ccw{max-width:82vh;max-height:90vw;transform:rotate(-90deg)}
-.card.portrait .photo{aspect-ratio:.72}
-.lb-caption .device{color:#e0e0da;letter-spacing:.02em}
-
-
-/* Responsive and touch refinements for phones, tablets and large displays. */
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-.lang{min-height:44px;touch-action:manipulation}
-.card{touch-action:manipulation}
-.card:focus-visible .zoom{opacity:1;transform:none}
-@media(hover:none){.zoom{opacity:1;transform:none}}
-@media(max-width:760px){
- .shell{padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
- .lang{min-width:56px}
- .lightbox{padding:max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(76px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
- .lb-close{right:max(13px,env(safe-area-inset-right));top:max(13px,env(safe-area-inset-top));width:44px;height:44px}
- .lb-prev{left:max(10px,env(safe-area-inset-left))}.lb-next{right:max(10px,env(safe-area-inset-right))}
- .lb-caption{width:calc(100% - 92px);bottom:max(17px,env(safe-area-inset-bottom));line-height:1.4}
-}
-@media(max-width:390px){.shell{padding-left:max(17px,env(safe-area-inset-left));padding-right:max(17px,env(safe-area-inset-right))}.footer{flex-wrap:wrap;gap:8px}}
-@media(max-height:560px) and (orientation:landscape){
- .lightbox{padding:58px 64px 64px}
- .lightbox img,.lightbox video{max-height:66vh}
- .lb-caption{bottom:10px}
- .lb-close{top:max(8px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right))}
-}
-@media(min-width:761px) and (max-width:1024px){.shell{padding-inline:4%}.gallery{column-gap:18px;row-gap:30px}.intro{gap:38px}}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0d">
+  <meta name="description" content="Her Açıdan Kare — ışığın, zamanın ve hikâyelerin izinde bir fotoğraf portföyü.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Her Açıdan Kare — Dünyaya başka bir açıdan bak.">
+  <meta property="og:description" content="Işığın, zamanın ve hikâyelerin izinde.">
+  <title>Her Açıdan Kare — Dünyaya başka bir açıdan bak.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body><div class="shell"><header class="topbar"><div class="brand"><span class="brandmark">h</span><span>Her Açıdan Kare</span></div><div class="topright"><span class="edition" data-i18n="edition">GÖRSEL GÜNLÜK &nbsp;·&nbsp; 2025—26</span><button class="lang" id="language" aria-label="Change language" data-i18n-aria="languageLabel"><b>TR</b><span>/</span>EN</button></div></header>
-<main><section class="intro"><div><p class="eyebrow"><i></i><span data-i18n="eyebrow">Farklı bir bakış açısı</span></p><h1>Her Açıdan<br><em>Kare.</em></h1></div><p class="intro-copy" data-i18n="copy">Yukarıdan, avucunun içinden, üretimin kalbinden. Dünyayı gördüğümüz her açı, anlatılmaya değer.</p></section>
-<div class="toolbar"><div class="count" id="count"></div></div><section class="gallery" id="gallery" aria-live="polite"></section></main><footer class="footer"><span>HER AÇIDAN KARE</span><span data-i18n="foot">Her kare başka bir dünya.</span></footer></div>
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" data-i18n-aria="viewerLabel"><button class="lb-close" aria-label="Close" data-i18n-aria="closeLabel">×</button><button class="lb-arrow lb-prev" aria-label="Previous photo" data-i18n-aria="previousLabel">‹</button><img id="large" alt=""><video id="largeVideo" controls playsinline style="display:none"></video><button class="lb-arrow lb-next" aria-label="Next photo" data-i18n-aria="nextLabel">›</button><div class="lb-caption" id="caption"></div></div>
-<script>
-const photos=[
-{id:'01',title:{tr:'\u015eehir \u00fcst\u00fcnde g\u00fcn bat\u0131m\u0131',en:'Sunset over the city'},place:{tr:'\u0130stanbul',en:'Istanbul'},src:'images/01-bogaz-gun-batimi.JPEG',orientation:'ccw'},
-{id:'02',shape:'portrait',title:{tr:'Geceye do\u011fru',en:'Into the night'},place:{tr:'U\u00e7u\u015ftan',en:'From the flight'},src:'images/02-ucaktan-gece.JPEG',camera:{tr:'Apple iPhone 14 Pro ile \u00e7ekildi',en:'Shot on Apple iPhone 14 Pro'}},
-{id:'03',gps:true,shape:'portrait',title:{tr:'K\u0131z Kulesi, gece',en:'Maiden Tower at night'},place:{tr:'\u0130stanbul',en:'Istanbul'},src:'images/03-kiz-kulesi-gece.JPEG',camera:{tr:'Apple iPhone 14 Pro ile \u00e7ekildi',en:'Shot on Apple iPhone 14 Pro'}},
-{id:'04',gps:true,shape:'portrait',title:{tr:'Galata\u2019da gece',en:'Night in Galata'},place:{tr:'\u0130stanbul',en:'Istanbul'},src:'images/04-galata-kulesi-gece.JPEG',camera:{tr:'Apple iPhone 14 Pro ile \u00e7ekildi',en:'Shot on Apple iPhone 14 Pro'}},
-{id:'05',shape:'portrait',title:{tr:'Bo\u011faz k\u0131y\u0131s\u0131nda',en:'By the Bosphorus'},place:{tr:'Ortak\u00f6y, \u0130stanbul',en:'Ortakoy, Istanbul'},src:'images/05-cami-ve-bogaz-gece.JPEG',camera:{tr:'Apple iPhone 14 Pro ile \u00e7ekildi',en:'Shot on Apple iPhone 14 Pro'}},
-{id:'06',gps:true,title:{tr:'K\u0131z Kulesi, g\u00fcnd\u00fcz',en:'Maiden Tower by day'},place:{tr:'\u0130stanbul',en:'Istanbul'},src:'images/06-kiz-kulesi-gunduz.JPEG',camera:{tr:'Apple iPhone 14 Pro ile \u00e7ekildi',en:'Shot on Apple iPhone 14 Pro'}},
-{id:'07',gps:true,title:{tr:'K\u00f6pr\u00fc \u0131\u015f\u0131klar\u0131',en:'Bridge lights'},place:{tr:'Bo\u011faz, \u0130stanbul',en:'Bosphorus, Istanbul'},src:'images/07-bogaz-koprusu-gece.JPEG',camera:{tr:'Apple iPhone 14 Pro ile \u00e7ekildi',en:'Shot on Apple iPhone 14 Pro'}},
-{id:'08',title:{tr:'Bulutlar\u0131n aras\u0131nda g\u00fcn bat\u0131m\u0131',en:'Sunset among the clouds'},place:{tr:'Erzincan, T\u00fcrkiye',en:'Erzincan, T\u00fcrkiye'},src:'images/IMG_5974.JPEG',gps:true},
-{id:'09',title:{tr:'Orman\u0131n i\u00e7inden akan su',en:'Water through the forest'},place:{tr:'Orman deresinde',en:'Forest stream'},src:'images/IMG_2396_jpg.JPEG'},
-{id:'10',title:{tr:'Nehir k\u0131y\u0131s\u0131nda mola',en:'A pause by the river'},place:{tr:'Artvin, T\u00fcrkiye',en:'Artvin, T\u00fcrkiye'},src:'images/FullSizeRender.JPEG',gps:true},
-{id:'11',title:{tr:'Ege k\u0131y\u0131s\u0131',en:'Aegean coast'},place:{tr:'Rodos, Yunanistan',en:'Rhodes, Greece'},src:'images/IMG_8906.JPEG',gps:true},
-{id:'12',title:{tr:'Da\u011f s\u0131rtlar\u0131',en:'Mountain ridges'},place:{tr:'Trabzon, T\u00fcrkiye',en:'Trabzon, T\u00fcrkiye'},src:'images/dji_fly_20260702_162142_410_1783001082585_photo_optimized.JPEG',gps:true},
-{id:'13',title:{tr:'\u015eehirde g\u00fcn bat\u0131m\u0131',en:'Sunset over the city'},place:{tr:'Tel Abyad, Suriye',en:'Tell Abyad, Syria'},src:'images/IMG_5923.JPEG'},
-{id:'14',type:'video',title:{tr:'Yolculuktan bir an',en:'A moment from the journey'},place:{tr:'Video',en:'Video'},src:'images/IMG_4171.MP4'}];
-const words={tr:{edition:'G\u00d6RSEL G\u00dcNL\u00dcK &nbsp;\u00b7&nbsp; 2025\u201426',eyebrow:'Farkl\u0131 bir bak\u0131\u015f a\u00e7\u0131s\u0131',copy:'Yukar\u0131dan, avucunun i\u00e7inden, \u00fcretimin kalbinden. D\u00fcnyay\u0131 g\u00f6rd\u00fc\u011f\u00fcm\u00fcz her a\u00e7\u0131, anlat\u0131lmaya de\u011fer.',foot:'Her kare ba\u015fka bir d\u00fcnya.',count:'KARE',languageLabel:'Dili de\u011fi\u015ftir',viewerLabel:'Foto\u011fraf g\u00f6r\u00fcnt\u00fcleyici',closeLabel:'Kapat',previousLabel:'\u00d6nceki foto\u011fraf',nextLabel:'Sonraki foto\u011fraf'},en:{edition:'A VISUAL JOURNAL &nbsp;\u00b7&nbsp; 2025\u201426',eyebrow:'A different point of view',copy:'From above, from the palm of your hand, from the heart of making. Every angle is a story worth telling.',foot:'Every frame, another world.',count:'FRAMES',languageLabel:'Change language',viewerLabel:'Photo viewer',closeLabel:'Close',previousLabel:'Previous photo',nextLabel:'Next photo'}};
-let lang='tr',current=0;const gallery=document.querySelector('#gallery'),count=document.querySelector('#count'),lb=document.querySelector('#lightbox'),large=document.querySelector('#large'),largeVideo=document.querySelector('#largeVideo'),caption=document.querySelector('#caption');
-function render(){gallery.innerHTML=photos.map((p,i)=>`<article role="button" class="card ${i===0?'wide':''} ${p.shape==='portrait'?'portrait':''}" tabindex="0" data-id="${p.id}" aria-label="${p.title[lang]}"><div class="photo">${p.type==='video'?`<video src="${p.src}" muted playsinline preload="metadata" aria-label="${p.title[lang]}"></video>`:`<img class="${p.orientation==='ccw'?'rotate-ccw':''}" src="${p.src}" alt="${p.title[lang]} &mdash; ${p.place[lang]}" loading="${i===0?'eager':'lazy'}" decoding="async" fetchpriority="${i===0?'high':'auto'}" style="object-position:center">`}<span class="zoom" aria-hidden="true">${p.type==='video'?'&#9654;':'&#8599;'}</span></div><div class="meta"><div><h2 class="title">${p.title[lang]}</h2><p class="place place-line">${p.gps?`<span class="pin" title="${lang==='tr'?'Konum bilgisi foto\u011frafa kay\u0131tl\u0131':'GPS location recorded in photo'}" aria-label="${lang==='tr'?'Konum bilgisi foto\u011frafa kay\u0131tl\u0131':'GPS location recorded in photo'}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>`:''}${p.place[lang]}</p></div><span class="index">${p.id} / ${String(photos.length).padStart(2,'0')}</span></div></article>`).join('');count.textContent=`${String(photos.length).padStart(2,'0')} ${words[lang].count}`}
-function setLang(l){lang=l;document.documentElement.lang=l;document.querySelectorAll('[data-i18n]').forEach(el=>{let k=el.dataset.i18n;el.innerHTML=words[l][k]});document.querySelectorAll('[data-i18n-aria]').forEach(el=>el.setAttribute('aria-label',words[l][el.dataset.i18nAria]));document.querySelector('#language').innerHTML=l==='tr'?'<b>TR</b><span>/</span>EN':'TR<span>/</span><b>EN</b>';render()}
-document.querySelector('#language').addEventListener('click',()=>setLang(lang==='tr'?'en':'tr'));
-function openPhoto(p){current=photos.indexOf(p);showPhoto()}function showPhoto(){const p=photos[current];largeVideo.pause();large.classList.toggle('rotate-ccw',p.orientation==='ccw');if(p.type==='video'){large.style.display='none';largeVideo.style.display='block';largeVideo.src=p.src;largeVideo.load();largeVideo.play().catch(()=>{})}else{largeVideo.style.display='none';largeVideo.removeAttribute('src');largeVideo.load();large.style.display='block';large.src=p.src;large.alt=`${p.title[lang]} \u2014 ${p.place[lang]}`}caption.innerHTML=`${p.title[lang]}<span>${p.place[lang]} &nbsp;&middot;&nbsp; ${String(current+1).padStart(2,'0')} / ${String(photos.length).padStart(2,'0')}</span>${p.camera?`<span class="device">${p.camera[lang]}</span>`:''}`;lb.classList.add('open');document.body.style.overflow='hidden'}function closePhoto(){largeVideo.pause();lb.classList.remove('open');document.body.style.overflow=''}gallery.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openPhoto(photos.find(p=>p.id===c.dataset.id))});gallery.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.card')){e.preventDefault();openPhoto(photos.find(p=>p.id===e.target.dataset.id))}});document.querySelector('.lb-close').onclick=closePhoto;document.querySelector('.lb-prev').onclick=()=>{current=(current+photos.length-1)%photos.length;showPhoto()};document.querySelector('.lb-next').onclick=()=>{current=(current+1)%photos.length;showPhoto()};lb.addEventListener('click',e=>{if(e.target===lb)closePhoto()});document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closePhoto();if(e.key==='ArrowRight'){current=(current+1)%photos.length;showPhoto()}if(e.key==='ArrowLeft'){current=(current+photos.length-1)%photos.length;showPhoto()}});render();
-</script></body></html>
+<body>
+  <a class="skip-link" href="#main" data-copy="skipLink">İçeriğe geç</a>
+  <header class="site-header" aria-label="Site header" data-copy-aria="siteHeader">
+    <a class="brand" href="#top" aria-label="Her Açıdan Kare — ana sayfa">
+      <span class="brand-mark" aria-hidden="true"><i></i></span>
+      <span class="brand-name">HER AÇIDAN KARE</span>
+    </a>
+    <nav class="main-nav" aria-label="Ana menü" data-copy-aria="mainNav">
+      <a href="#gallery" data-copy="navGallery">Galeri</a>
+      <a href="#stories" data-copy="navStories">Hikâye</a>
+      <a href="#contact" data-copy="navContact">İletişim</a>
+    </nav>
+    <button class="language-switch" id="language" type="button" aria-label="Change language">
+      <span class="language-option is-current" data-lang-option="tr">TR</span>
+      <span class="language-divider" aria-hidden="true">/</span>
+      <span class="language-option" data-lang-option="en">EN</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" id="hero-image" src="images/IMG_5923.JPEG" alt="Tel Abyad üzerinde kızıl gün batımı" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow" data-copy="heroEyebrow">FOTOĞRAF PORTFÖYÜ</p>
+        <h1 id="hero-title"><span data-copy="heroLineOne">Dünyaya başka</span><br><em data-copy="heroLineTwo">bir açıdan bak.</em></h1>
+        <p class="hero-subtitle" data-copy="heroSubtitle">Işığın, zamanın ve hikâyelerin izinde.</p>
+        <a class="text-link hero-link" href="#gallery"><span data-copy="heroCta">Fotoğrafları keşfet</span><span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-location"><span class="location-rule" aria-hidden="true"></span><span data-copy="heroLocation">TEL ABYAD, SURİYE</span></div>
+      <a class="scroll-cue" href="#gallery" aria-label="Galeriye kaydır" data-copy-aria="scrollLabel"><span class="scroll-line" aria-hidden="true"></span><span data-copy="scroll">KAYDIR</span></a>
+      <button class="hero-image-trigger" type="button" data-photo-id="13" data-copy-aria="openHeroPhoto" aria-label="Gün batımı fotoğrafını aç"></button>
+    </section>
+
+    <div class="page-shell">
+      <section class="intro-section" aria-labelledby="intro-title">
+        <p class="eyebrow section-kicker" data-copy="introKicker">HER KARE BİR YERDEN BAŞLAR</p>
+        <h2 id="intro-title" data-copy="introTitle">Bazen bir şehir,<br>bazen yalnızca ışık.</h2>
+        <p class="intro-copy" data-copy="introCopy">Şehrin kıyısından dağların sessizliğine uzanan bu seçki; görülen yerleri, değişen ışığı ve yolda karşılaşılan küçük anları bir araya getiriyor.</p>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-kicker" data-copy="galleryKicker">GÖRSEL GÜNLÜK &nbsp; / &nbsp; 01—28</p>
+            <h2 id="gallery-title" data-copy="galleryTitle">Seçilmiş kareler</h2>
+          </div>
+          <p class="section-note" data-copy="galleryNote">Dünyaya, farklı mesafelerden ve farklı zamanlarda bakış.</p>
+        </div>
+        <div class="gallery-toolbar">
+          <div class="filter-list" role="group" aria-label="Galeri filtreleri" data-copy-aria="galleryFilters">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true" data-copy="filterAll">Tümü</button>
+            <button class="filter-button" type="button" data-filter="city" aria-pressed="false" data-copy="filterCity">Şehir</button>
+            <button class="filter-button" type="button" data-filter="nature" aria-pressed="false" data-copy="filterNature">Doğa</button>
+            <button class="filter-button" type="button" data-filter="journey" aria-pressed="false" data-copy="filterJourney">Yolculuk</button>
+          </div>
+          <p class="gallery-count" id="gallery-count" aria-live="polite"></p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="stories-section" id="stories" aria-labelledby="stories-title">
+        <div class="section-heading stories-heading">
+          <div>
+            <p class="eyebrow section-kicker" data-copy="storiesKicker">BİR ARADA GÖRÜLENLER</p>
+            <h2 id="stories-title" data-copy="storiesTitle">Fotoğraf hikâyeleri</h2>
+          </div>
+          <p class="section-note" data-copy="storiesNote">Aynı duyguda buluşan karelerden küçük seçkiler.</p>
+        </div>
+        <div class="stories-grid" id="stories-grid"></div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-rule" aria-hidden="true"></div>
+        <p class="eyebrow section-kicker" data-copy="aboutKicker">HER AÇIDAN KARE HAKKINDA</p>
+        <div class="about-copy-wrap">
+          <h2 id="about-title" data-copy="aboutTitle">Bakış değişince,<br><em>hikâye de değişir.</em></h2>
+          <div class="about-copy">
+            <p data-copy="aboutCopyOne">Her Açıdan Kare, şehirlerden kıyılara ve yol üstü manzaralara uzanan kişisel bir görsel günlük. Her fotoğraf, karşılaşılan bir anı olduğu gibi saklıyor.</p>
+            <p data-copy="aboutCopyTwo">Işığın yönü, günün saati ve durup bakmayı seçtiğimiz yer… Bazen bir kareyi anlatmaya bunlar yeter.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow section-kicker" data-copy="contactKicker">BİR SONRAKİ KAREYE</p>
+        <div class="contact-row">
+          <h2 id="contact-title" data-copy="contactTitle">Bir hikâye<br>başlatalım.</h2>
+          <p class="contact-copy" data-copy="contactCopy">Projeler, iş birlikleri veya fotoğraflar üzerine konuşmak için Instagram’dan bana ulaşabilirsiniz.</p>
+          <div class="contact-detail" id="contact-detail"><a href="https://www.instagram.com/kadiraslann61/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @kadiraslann61">Instagram · @kadiraslann61 <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <a class="footer-brand" href="#top">HER AÇIDAN KARE</a>
+    <span data-copy="footerLine">Işığın izinde, her açıdan.</span>
+    <a class="back-to-top" href="#top"><span data-copy="backToTop">Başa dön</span><span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Fotoğraf görüntüleyici">
+    <button class="lightbox-close" type="button" aria-label="Kapat" data-copy-aria="closeViewer">×</button>
+    <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Önceki fotoğraf" data-copy-aria="previousPhoto"><span aria-hidden="true">←</span></button>
+    <div class="lightbox-stage" id="lightbox-stage">
+      <img id="lightbox-image" alt="">
+      <video id="lightbox-video" controls playsinline preload="metadata" hidden></video>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-arrow lightbox-next" type="button" aria-label="Sonraki fotoğraf" data-copy-aria="nextPhoto"><span aria-hidden="true">→</span></button>
+    <p class="lightbox-count" id="lightbox-count"></p>
+  </div>
+</body>
+</html>
